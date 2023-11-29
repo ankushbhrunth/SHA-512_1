@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../project_1.srcs/sources_1/new/Compression_function.v" \
+"../../../../project_1.srcs/sources_1/new/SHA_512.v" \
+"../../../../project_1.srcs/sources_1/new/functions.v" \
+"../../../../project_1.srcs/sources_1/new/message_block.v" \
+"../../../../project_1.srcs/sources_1/new/message_schedule.v" \
+"../../../../project_1.srcs/sources_1/new/round.v" \
+"../../../../project_1.srcs/sim_1/new/SHA_512_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
